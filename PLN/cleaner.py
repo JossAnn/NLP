@@ -20,11 +20,3 @@ def clean_text(text: str) -> str:
     text = re.sub(r"\s+", " ", text).strip()
 
     return text
-
-
-# Para pruebas rápidas
-if __name__ == "__main__":
-    TEXTO = "¡El Perrito, sureño... de los cacahuates mágicos!"
-    limpio = clean_text(TEXTO)
-    print(f"Original: {TEXTO}")
-    print(f"Limpio:   {limpio}")
