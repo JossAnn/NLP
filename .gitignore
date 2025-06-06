@@ -1,3 +1,8 @@
 .venv/*
 trash/
 analyzer/
+*__init__.py
+*__pycache__/
+NPL/
+analizador/
+
