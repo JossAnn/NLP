@@ -29,8 +29,8 @@ def comparador(texto_a: str, texto_b: str):# -> dict:
     return salida_final
 
 if __name__ == "__main__":
-    texto1 = "El perrito sureño de los cacahuates"
-    texto2 = "La almohada magica del perrito"
+    texto1 = "3l perr1t0 5ureño de lo5 cacaHu4tes"
+    texto2 = "La almohada mág1ca del perrito cAc4huater0"
     resultados = comparador(texto1, texto2)
     
 
