@@ -2,12 +2,19 @@
 
 Natural Language Processing
 
-#### Limpieza de entradas de texto
+### Limpieza de entradas de texto
 
-Archivo cleaner.py limpia y preprocesa el texto:
+Archivo cleaner.py
 
-* [X] Convierte a minúsculas
-* [X] Elimina tildes y caracteres no ASCII
-* [X] Elimina signos de puntuación
-* [X] Elimina caracteres no alfanuméricos (excepto espacios)
-* [X] Quita espacios múltiples
+*  Convierte a minúsculas
+*  Elimina tildes y caracteres no ASCII
+*  Elimina signos de puntuación
+*  Elimina caracteres no alfanuméricos (excepto espacios)
+*  Quita espacios múltiples
+
+### Transliteración
+
+Archivo transliterator.py
+
+* Intercambia numeros dentro de las palabras por letras
+* Mantiene cantidades dentro de una oración
