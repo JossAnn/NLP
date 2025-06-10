@@ -40,3 +40,9 @@ def transliterator(texto: str) -> object:
         "words_trans": transliteraciones
     }
     return translit_props
+
+"""
+if __name__ == "__main__":
+    texto = "3l perr1t0 mal0 5ureño de lo5 38 cacaHu4tes"
+    print(transliterator(texto))
+"""

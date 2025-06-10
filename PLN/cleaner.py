@@ -14,7 +14,7 @@ def clean_text(text: str) -> str:
     text = unidecode(text)
 
     # Restaurar la ñ (porque no es ASCII, pero en la fonetica sera evaluada)
-    text = text.replace("__enie__", "ñ")
+    text = text.replace("__enie__", "ni") # En la fonetica ingles no se interpreta la ñ por eso se optó por ni
     
     # Eliminar puntuación
     text = text.translate(str.maketrans("", "", string.punctuation))
@@ -26,3 +26,9 @@ def clean_text(text: str) -> str:
     text = re.sub(r"\s+", " ", text).strip()
 
     return text
+
+"""
+if __name__ == "__main__":
+    text = "Hola, ¿cómo estás? ¡Estoy bien! ¿Y tú?"
+    print(clean_text(text))
+"""

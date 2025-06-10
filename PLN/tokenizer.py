@@ -1,8 +1,8 @@
 import spacy
-from pprint import pprint
+#from pprint import pprint
 
 # Cargar modelo de spaCy para español
-nlp = spacy.load("es_core_news_sm")
+nlp = spacy.load("es_core_news_lg") #usaremos solo el modelo grande para no tener dos instalados
 
 def tokens_analyzer(texto: str, filtrar=True) -> dict:
     doc = nlp(texto)
@@ -51,12 +51,13 @@ def tokens_analyzer(texto: str, filtrar=True) -> dict:
         "masculino": {"coincidencias": len(masculinos), "palabras": masculinos},
         "femenino": {"coincidencias": len(femeninos), "palabras": femeninos},
     }
-    token_props = {"analisis": analisis, "resumen": resumen}
+    token_props = {"origin": texto, "analisis": analisis, "resumen": resumen}
 
     return token_props
 
-# Ejemplo de uso directo
+"""
 if __name__ == "__main__":
-    texto = "el perrito sureño de los cacahuates magicos"
-    resultado = tokens_analyzer(texto)
-    pprint(resultado["resumen"])
+    chain = "el perrito sureño de los cacahuates magicos"
+    resultado = tokens_analyzer(chain)
+    pprint(resultado)
+"""
